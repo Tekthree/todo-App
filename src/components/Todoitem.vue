@@ -2,7 +2,7 @@
   <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
     <p>
       <input type="checkbox" v-on:change="markComplete">
-      {{todo.titlte}}
+      {{todo.title}}
       <button @click="$emit('del-todo', todo.id)" class="del">x</button>
     </p>
   </div>
@@ -30,7 +30,7 @@ export default {
   .todo-item{
     background: #f4f4f4;
     padding: 10px;
-    border-bottom: 1px #ccc dotted;
+    border-bottom: 0px rgb(233, 231, 231) dotted;
   }
 
   .is-complete{
